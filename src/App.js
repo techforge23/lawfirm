@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Papa from 'papaparse'
+import Results from './Components/Results,';
+import JoslynHeader from './Components/JoslynHeader';
 
 function App() {
   const [file, setFile] = useState(null);
@@ -30,6 +32,7 @@ function App() {
 
   return (
     <div className="bg-gray-300 font-bold py-2 h-screen w-full min-h-screen min-w-screen flex flex-col items-center justify-center align-center">
+      <JoslynHeader/>
       <header>
         <h1 className='p-10'>CSV File Processor</h1>
       </header>
@@ -37,11 +40,7 @@ function App() {
         <input className='p-5' type="file" accept=".csv" onChange={handleFileUpload} />
         <button className="bg-black hover:bg-gray-700 text-white font-medium py-2 px-8 rounded-full" onClick={handleRunClick}>Run</button>
       </div>
-      <textarea 
-        value={results} 
-        readOnly 
-        className="w-4/5 h-64 bg-gray-200 px-4 py-4 mx-auto border rounded border-black shadow" 
-      />
+      <Results results={results} />
     </div>
   );
 }
