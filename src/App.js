@@ -16,13 +16,15 @@ function App() {
     <div className="bg-gray-300 font-bold py-2 h-screen w-full min-h-screen min-w-screen flex flex-col items-center justify-center align-center">
       <JoslynHeader/>
       <FileUpload className="h-max" processData={processData} />
-      <Results results={results} />
+      <div className="overflow-y-auto max-h-screen">
+        <Results results={results} />
+      </div>
     </div>
 
 
   );
 }
 
-// REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEe
+
 export default App;
 
