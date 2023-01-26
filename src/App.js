@@ -20,10 +20,6 @@ function App() {
         <Results results={results} />
       </div>
     </div>
-
-    // testing 
-
-
   );
 }
 
