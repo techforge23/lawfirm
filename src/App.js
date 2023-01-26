@@ -23,6 +23,6 @@ function App() {
   );
 }
 
-// REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+// REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEe
 export default App;
 
