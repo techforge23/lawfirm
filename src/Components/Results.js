@@ -2,7 +2,7 @@ import React from 'react'
 
 function Results({ results }) {
     if (!results) {
-        return <div>No Data</div>;
+        return <div></div>;
     }
 
     const rows = results.map((result, index) => {
