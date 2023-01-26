@@ -15,7 +15,7 @@ function Results({ results }) {
 });
 
     return (
-        <table className="w-4/5 h-64 mx-auto border rounded border-black shadow">
+        <table className="w-4/5 h-32 mx-auto border rounded border-black shadow overflow-y-auto">
             <thead>
                 <tr className="bg-gray-200">
                     <th className="px-4 py-4">Client Name</th>
@@ -30,5 +30,6 @@ function Results({ results }) {
 }
 
 export default Results;
+
 
 
